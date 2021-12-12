@@ -32,7 +32,7 @@ P = [150, 150, 25, 150, 25]
 """
 
 with open('villes.csv', newline='', encoding="latin") as csvfile:
-    reader = csv.DictReader(csvfile)
+    reader = csv.DictReader(csvfile,delimiter=';')
     
     # Villes : liste des villes
     # Populations : liste du nombre de population de chaque ville

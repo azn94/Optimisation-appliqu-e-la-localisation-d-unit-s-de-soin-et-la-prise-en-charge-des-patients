@@ -13,10 +13,10 @@ import numpy as np
 # ['Toulouse', 'Nice', 'Nantes', 'Montpellier', 'Strasbourg', 'Bordeaux', 'Lille', 'Rennes', 'Reims', 'Saint-étienne', 'Toulon', 'Le Havre', 'Grenoble', 'Dijon', 'Angers']
 
 # Unites : villes possédant une unité spéciale de traitement des patients atteints par une forme sévère d’une nouvelle maladie
-Unites = ['Nantes', 'Lille', 'Montpellier'] 
+Unites = ['Abricot', 'Brugnon'] 
 
 # alpha : paramètre strictement positif valant 0.1 ou 0.2
-alpha = 0.1
+alpha = 0.5
 
 # --------------------------------------------------------------------------------------------------------------
 
@@ -27,8 +27,8 @@ alpha = 0.1
 """
 
 with open('villes.csv', newline='', encoding="latin") as csvfile:
-    reader = csv.DictReader(csvfile)
-    
+    reader = csv.DictReader(csvfile,delimiter=';')
+    print(reader)
     # Villes : liste des villes
     # Populations : liste du nombre de population de chaque ville
     # dist : liste de listes des distances en annexe

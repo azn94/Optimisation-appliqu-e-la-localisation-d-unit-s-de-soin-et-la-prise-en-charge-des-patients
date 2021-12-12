@@ -11,10 +11,10 @@ import numpy as np
 """
 
 # k : nombre d'unité spéciale défini par l'utilisateur
-k = 5
+k = 3
 
 # alpha : paramètre strictement positif valant 0.1 ou 0.2
-alpha = 0.2
+alpha = 0.5
 
 # --------------------------------------------------------------------------------------------------------------
 
@@ -25,7 +25,7 @@ alpha = 0.2
 """
 
 with open('villes.csv', newline='', encoding="latin") as csvfile:
-    reader = csv.DictReader(csvfile)
+    reader = csv.DictReader(csvfile,delimiter=';')
     
     # Villes : liste des villes
     # Populations : liste du nombre de population de chaque ville
