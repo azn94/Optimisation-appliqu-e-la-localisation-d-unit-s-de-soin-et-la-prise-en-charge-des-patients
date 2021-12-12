@@ -1,6 +1,5 @@
 # Optimisation-appliqu-e-la-localisation-d-unit-s-de-soin-et-la-prise-en-charge-des-patients
 
-
 La lecture du csv est possible si le caractère délimitant est défini à ',' et non à ';'
 Le fichier csv utilisé pour notre code est fourni dans le rendu.
 
